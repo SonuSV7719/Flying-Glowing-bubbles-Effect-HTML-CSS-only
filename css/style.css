@@ -1,0 +1,170 @@
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(24, 23, 23);
+    overflow: hidden;
+}
+
+.balls
+{
+    position: relative;
+    display: flex;
+    
+}
+
+
+/* ================================================================
+                    Aqua
+===================================================================*/
+
+.aqua
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    margin: 0px 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(15, 128, 128),
+    0 0 50px rgb(135, 255, 255),
+    0 0 80px rgb(156, 255, 255);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(130s/var(--i));
+}
+
+/* ================================================================
+                    Violet
+===================================================================*/
+
+.violet
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: violet;
+    margin: 0px 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(216, 0, 216),
+    0 0 50px rgb(255, 120, 255),
+    0 0 80px rgb(255, 169, 255);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(130s/var(--i));
+}
+
+/* ================================================================
+                    Orange
+===================================================================*/
+
+.orange
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    margin: 0px 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(185, 122, 3),
+    0 0 50px rgb(247, 177, 47),
+    0 0 80px rgb(255, 195, 83);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(130s/var(--i));
+}
+
+/* ================================================================
+                    Green
+===================================================================*/
+
+.green
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    margin: 0px 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(1, 92, 1),
+    0 0 50px rgb(42, 255, 42),
+    0 0 80px rgb(81, 255, 81);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(130s/var(--i));
+}
+
+/* ================================================================
+                 indigo
+===================================================================*/
+
+.indigo
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: indigo;
+    margin: 0px 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(54, 1, 92),
+    0 0 50px rgb(163, 35, 255),
+    0 0 80px rgb(183, 81, 255);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(150s/var(--i));
+
+}
+
+/* ================================================================
+                    Yellow
+===================================================================*/
+
+.yellow
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0px 4px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 0 0 0 10px rgb(165, 165, 2),
+    0 0 50px rgb(255, 255, 62),
+    0 0 80px rgb(255, 255, 112);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(110s/var(--i));
+}
+
+/* ================================================================
+                    Red
+===================================================================*/
+
+.red
+{
+    background-color: red;
+    box-shadow: 0 0 0 10px rgb(156, 20, 3),
+    0 0 50px rgb(255, 97, 69),
+    0 0 80px rgb(255, 139, 139);
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0px 4px;
+    border-radius: 50%;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(130s/var(--i));
+}
+
+/* ================================================================
+                    Animation key frames
+===================================================================*/
+
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1)
+    }
+}
